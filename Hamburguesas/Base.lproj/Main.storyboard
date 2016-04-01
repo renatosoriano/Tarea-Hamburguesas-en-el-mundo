@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-v4-UJn">
+                                <rect key="frame" x="135" y="206" width="46" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cPQ-9C-DRx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBC-Ii-MSi">
+                                <rect key="frame" x="16" y="273" width="284" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pod-Xu-qi5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwb-mW-0eW">
+                                <rect key="frame" x="16" y="434" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QGT-sv-kUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M9-Qv-cec">
+                                <rect key="frame" x="33" y="95" width="250" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1OJ-9u-NLH"/>
+                                </constraints>
+                                <state key="normal" title="¡Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="botonHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bla-tP-yyx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itc-0h-D2G">
+                                <rect key="frame" x="73" y="377" width="174" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KZg-h0-TBR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1M9-Qv-cec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="6ka-aH-336"/>
+                            <constraint firstItem="1M9-Qv-cec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="8yl-wQ-SFf"/>
+                            <constraint firstItem="Itc-0h-D2G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="AAa-JN-UkI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Vwb-mW-0eW" secondAttribute="leading" id="C2b-qm-dmr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1M9-Qv-cec" secondAttribute="trailing" constant="21" id="MAO-hW-bAc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vwb-mW-0eW" secondAttribute="trailing" id="QKU-LV-d3O"/>
+                            <constraint firstItem="zfE-v4-UJn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="186" id="Zl5-9R-FvN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zfE-v4-UJn" secondAttribute="trailing" constant="123" id="aMb-fG-qOy"/>
+                            <constraint firstItem="Itc-0h-D2G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="c3f-9q-Dkz"/>
+                            <constraint firstItem="QBC-Ii-MSi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="253" id="eem-Al-noq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QBC-Ii-MSi" secondAttribute="trailing" constant="4" id="fZF-bg-kVU"/>
+                            <constraint firstItem="Itc-0h-D2G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="357" id="gIB-FS-GzR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Itc-0h-D2G" secondAttribute="trailing" constant="57" id="guf-dp-8mB"/>
+                            <constraint firstItem="zfE-v4-UJn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="119" id="nRK-Y6-uWE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QBC-Ii-MSi" secondAttribute="leading" id="qKn-8Z-RCC"/>
+                            <constraint firstItem="Vwb-mW-0eW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="414" id="uGq-HI-wYa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mensajeHamburguesa" destination="Vwb-mW-0eW" id="Fc5-xh-34c"/>
+                        <outlet property="mensajePais" destination="QBC-Ii-MSi" id="Pek-aX-E02"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130" y="319"/>
         </scene>
     </scenes>
 </document>
